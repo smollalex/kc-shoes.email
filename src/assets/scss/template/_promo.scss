@@ -1,0 +1,101 @@
+.promo {
+
+  a {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: block;
+      text-align: center !important;
+    }
+  }
+
+  &-name {
+    p {
+      margin: 0;
+      text-align: center;
+      padding: 50px 0 0 0;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 24px;
+      color: rgb(67,134,192);
+      line-height: 1.5em;
+
+      span {
+        color: rgb(255,54,54);
+      }
+    }
+  }
+
+  &-code {
+    background-color: rgb(255,54,54);
+    color: #fff !important;
+    padding: 0 4px;
+  }
+
+  &-banner {
+    img {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0 10px;
+
+    span {
+      font-size: 11px;
+      text-transform: uppercase;
+      opacity: .4;
+      line-height: 20px;
+      display: block;
+    }
+  }
+
+  &-price {
+    text-align: center;
+    line-height: 25px;
+
+    &-old {
+      text-decoration: line-through;
+      opacity: .5;
+      font-size: 14px;
+      color: #333;
+    }
+    &-new {
+      font-size: 18px;
+      color: #00b4ff;
+      padding-left: 5px;
+    }
+  }
+  
+  &-img {
+    height: 220px;
+    width: auto;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      max-height: 250px;
+      display: inline-block !important;
+    }
+  }
+
+  &--first {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: none;
+    }
+    .promo-img {
+      height: auto;
+    }
+    .promo-title {
+      text-align: left;
+      margin-top: 90px;
+    }
+    .promo-text {
+      p {
+        font-size: 13px;
+      }
+    }
+    .promo-price {
+      text-align: left;
+      margin-top: 30px;
+    }
+  }
+}

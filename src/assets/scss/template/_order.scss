@@ -1,0 +1,165 @@
+.order {
+  border-top: 1px solid #e9eff7;
+
+  > tbody > tr {
+    > th {
+
+      padding-bottom: 30px;
+
+      &:nth-child(2){
+        vertical-align: bottom;
+      }
+      &:nth-child(3){
+        vertical-align: top;
+
+        .button {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  table.button.gray table td {
+    text-align: left;
+    background: $light-gray;
+    border: 2px solid $light-gray;
+
+    a {
+      color: #333;
+    }
+  }
+
+  &-heading {
+    h3 {
+      margin: 0 20px;
+      font-weight: 600;
+    }
+  }
+
+  &-img {
+    img {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        max-height: 200px;
+      }
+    }
+  }
+
+  &-category {
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: .4;
+    line-height: 20px;
+    display: block;
+  }
+
+  &-brand {
+    margin-bottom: 13px;
+    font-size: 18px
+  }
+
+  &-option {
+    font-size: 13px;
+    line-height: 24px;
+    
+    span {
+      opacity: .5;
+    }
+  }
+  &-price {
+    font-size: 18px;
+    color: #0079c0;
+    padding-top: 70px;
+  }
+
+  &-details {
+    padding: 0 20px 10px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0;
+    }
+
+    h5 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #96a4b0;
+
+      span {
+        color: #444;
+        display: block;
+        font-size: 15px;
+        line-height: 19px;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  &-prices {
+    padding: 0 20px 10px;
+    
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0;
+    }
+   
+
+    p {
+      font-size: 13px;
+      line-height: 28px;
+      color: #96a4b0;
+      font-weight: 300;
+      white-space: nowrap;
+      padding-right: 4px;
+      border-bottom: 1px dotted #ddd;
+
+      span {
+        font-size: 20px;
+        color: #202529;
+        font-weight: 300;
+        white-space: nowrap;
+        padding-left: 3px;
+        float: right;
+      }
+
+      &:last-child {
+        border-color: #0079bf;
+        margin-bottom: 0;
+        color: #0079bf;
+        text-transform: uppercase;
+        span {
+          color: #0079bf;
+        }
+      }
+    }
+  }
+
+  &-status {
+    padding: 0 20px 20px 30px;
+    text-align: center;
+
+    .status {
+      &-paid {
+        color: #25c000;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .order-testimonial {
+    margin-top: 70px;
+    
+    tbody tbody td {
+      background: none;  
+      border: none;
+    }
+
+    a {
+      color: #0079bf !important;
+      border-bottom: 1px dashed #0079bf;
+      padding: 0 0 2px 0;
+      cursor: pointer;
+    }
+  }
+}

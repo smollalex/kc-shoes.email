@@ -1,0 +1,88 @@
+---
+subject: Заказ завершён
+
+order_img: https://kc-shoes.ru/image/cache/data/products/1552557616-456527-260x375.JPG
+order_category: Женские босоножки
+order_brand: Tamaris
+order_index: 1-1-28211-22-452
+order_size: 37
+order_count: 1
+order_price: 2 990
+---
+
+<!-- Header -->
+{{> header}}
+<!-- / Header -->
+
+<!-- Content -->
+<wrapper class="content">
+  
+  <!-- Title -->
+  <container  class="order-heading">
+    <spacer size="30"></spacer>
+    <h3 class="text-center">Благодарим за покупку!</h3>
+    <spacer size="30"></spacer>
+  </container>
+  <!-- / Title -->
+
+  <!-- Text -->
+  <container>
+    <callout>
+      <p>КС-Немецкая обувь благодарит Вас за покупку, совершенную в нашем интернет-магазине. Мы надеемся, что наша обувь принесет вам удовольствие и хотели бы узнать о ваших первых впечатлениях от носки.</p>
+      <p>Пожалуйста, оставьте отзыв о совершенной покупке, используя кнопки ниже</p>
+      <p>Мы готовы ответить на ваши вопросы по электронной почте <a hreff="mailto:Info@kc-shoes.ru">info@kc-shoes.ru</a> или по телефону <a href="tel:8(800)7002778">8 (800) 700-27-68</a> (звонок бесплатный)</p>
+    </callout>
+  </container>
+  <!-- Text -->
+
+  <!-- Title -->
+  <container  class="order-heading">
+    <spacer size="30"></spacer>
+    <h3 class="text-center">Расскажите другим о нашем магазине</h3>
+    <spacer size="20"></spacer>
+    <center>
+      <button href="https://kc-shoes.ru/services/otzyvy-kc-shoes/">Оставить отзыв о нас</button>
+    </center>
+    <spacer size="20"></spacer>
+  </container>
+  <!-- / Title -->
+
+  <!-- Order items -->
+  <container class="order-wrap">  
+    
+    <!-- Order -->
+    <row class="order">
+      <columns small="12" large="3">
+        <a href="" class="order-img">
+          <img src="{{order_img}}" alt="">
+        </a>
+      </columns>
+      <columns small="12" large="4">
+        <div class="order-category">{{order_category}}</div>
+        <div class="order-brand">{{order_brand}}</div>
+        <div class="order-option">
+          <span>Артикул: </span>{{order_index}}</div>
+        </div>
+        <div class="order-option">
+          <span>Размер: {{order_size}}</span>
+        </div>
+        <div class="order-option">
+          <span>Колличество: {{order_count}}</span>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="order-testimonial">
+          <button href="http://kc-shoes.ru">Оставить отзыв</button>
+        </div>
+      </columns>
+    </row>
+    <!-- / Order -->
+  </container>
+  <!-- / Order items -->
+
+</wrapper>
+<!-- / Content -->
+
+<!-- Footer -->
+{{> footer}}
+<!-- / Footer -->

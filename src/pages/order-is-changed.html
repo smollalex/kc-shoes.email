@@ -1,0 +1,41 @@
+---
+subject: Заказ изменён
+order_number: 79226
+order_status: Оплачен
+---
+
+<!-- Header -->
+{{> header}}
+<!-- / Header -->
+
+<!-- Content -->
+<wrapper class="content">
+  
+  <!-- Title -->
+  <container class="order-heading">
+    <spacer size="30"></spacer>
+    <h3 class="text-center">Ваш заказ №{{order_number}} обновлен</h3>
+    <spacer size="30"></spacer>
+  </container>
+  <!-- / Title -->
+
+  <!-- Status -->
+  <container class="order-wrap">
+    <p class="order-status">Статус: <span class="status-paid">{{order_status}}</span></p>
+
+    <!-- Text -->
+    <callout>
+      <p>Для получения подробной информации о заказе перейдите в <a href="">личный кабинет</a></p>
+      <p>Мы готовы ответить на ваши вопросы по электронной почте <a hreff="mailto:Info@kc-shoes.ru">info@kc-shoes.ru</a> или по телефону <a href="tel:8(800)7002778">8 (800) 700-27-68</a> (звонок бесплатный)</p>
+    </callout>
+    <!-- / Text -->
+    
+  </container>
+  <!-- / Status -->
+
+</wrapper>
+<!-- / Content -->
+
+<!-- Footer -->
+{{> footer}}
+<!-- / Footer -->

@@ -1,0 +1,35 @@
+---
+subject: Заказ отправлен
+order_number: 79226
+---
+
+<!-- Header -->
+{{> header}}
+<!-- / Header -->
+
+<!-- Content -->
+<wrapper class="content">
+  
+  <!-- Title -->
+  <container class="order-heading">
+    <spacer size="30"></spacer>
+    <h3 class="text-center">Ваш заказ №{{order_number}} отправлен!</h3>
+    <spacer size="30"></spacer>
+  </container>
+  <!-- / Title -->
+
+  <!-- Text -->
+  <container class="order-wrap">
+    <callout>
+      <p>Вы можете отследить ваш заказ по <a href=""> этой сылке </a></p>
+      <p>Мы готовы ответить на ваши вопросы по электронной почте <a hreff="mailto:Info@kc-shoes.ru">info@kc-shoes.ru</a> или по телефону <a href="tel:8(800)7002778">8 (800) 700-27-68</a> (звонок бесплатный)</p>
+    </callout>
+  </container>
+  <!-- / Text -->
+
+</wrapper>
+<!-- / Content -->
+
+<!-- Footer -->
+{{> footer}}
+<!-- / Footer -->

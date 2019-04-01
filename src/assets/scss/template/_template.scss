@@ -1,0 +1,24 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+@import 'header';
+@import 'footer';
+
+@import 'callout';
+@import 'order';
+@import 'promo';
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #f6f9fe !important;
+  margin: 0 !important;
+}
+
+table.button table td a {
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 0.6px;
+}

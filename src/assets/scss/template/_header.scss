@@ -1,0 +1,139 @@
+.header {
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    margin-top: 30px !important;
+  }
+
+  .container {
+    background: none;
+
+    td {
+      background-color: #fff;
+    }
+
+    &-line {
+
+    }
+
+    &-header {
+
+      td {
+        padding: 30px 0 20px 0;
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          padding: 30px 20px 20px 20px !important;
+        }
+      }
+
+      .last {
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          display: none !important;
+        }
+      }
+    }
+
+  }
+
+  .columns {
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+
+  &-logo {
+
+    img {
+      width: 105px;
+      margin-left: 30px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-left: 3px !important;
+      }
+    }
+  }
+
+  &-phone {
+    img {
+      float: left;
+      width: 34px !important;
+      height: 34px !important;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-left: 8px;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      line-height: 34px;
+    }
+  }
+
+  &-delivery {
+    
+    img {
+      float: left;
+      width: 34px !important;
+      height: 34px !important;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 16px;
+      display: inline-block;
+      max-width: 130px;
+      margin-left: 4px;
+    }
+  }
+  
+  
+
+  &-line {
+    height: 6px;
+    background-image: url(https://kc-shoes.ru/front/view/theme/kcnew/image/mail-line.jpg);
+  }
+
+  .menu {
+    border-bottom: 1px solid #e9eff7;
+
+
+    td {
+      padding: 0 20px;
+    }
+
+    table {
+      width: 100%;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-bottom: 17px;
+      }
+    }
+  
+    th.menu-item {
+      padding: 10px 5px 20px 5px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding: 0 !important;
+        width: 47% !important;
+        border: 1px solid #dceff7;
+        margin: 2px !important;
+      }
+    }
+
+    a {
+      color: #383838;
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: 2;
+      font-weight: normal;
+      border-bottom: 1px solid transparent;
+  
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 11px !important;
+        line-height: 27px !important;
+      }
+
+      &:hover, &:focus {
+        border-color: $secondary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+---
+subject: Заказ принят в обработку
+order_number: 79226
+
+order_img: https://kc-shoes.ru/image/cache/data/products/1552557616-456527-260x375.JPG
+order_category: Женские босоножки
+order_brand: Tamaris
+order_index: 1-1-28211-22-452
+order_size: 37
+order_count: 1
+order_price: 2 990
+
+order_details_client: Иванов Иван Иванович
+order_details_phone: +7 (800) 111-22-33
+order_details_email: example@mail.ru
+order_details_delivery_type: Самовывоз
+order_details_delivery_adress: г.Омск, ул. Ленина, 1
+order_details_payment: Наличными
+order_details_fitting: доступна 15 минут на на один товар
+
+order_prices_sum: 21 573
+order_prices_sale: 100
+order_prices_delivery: 300
+order_prices_total: 21 873
+---
+
+<!-- Header -->
+{{> header}}
+<!-- / Header -->
+
+<!-- Content -->
+<wrapper class="content">
+  
+  <!-- Title -->
+  <container class="order-heading">
+    <spacer size="30"></spacer>
+    <h3 class="text-center">Ваш заказ №{{order_number}} принят в работу!</h3>
+    <spacer size="30"></spacer>
+  </container>
+  <!-- / Title -->
+
+  <!-- Text -->
+  <container class="order-wrap">
+    <callout>
+      <p>В ближайшее время с вами свяжется наш менеджер для подтверждения заказа и уточнения деталей.</p>
+      <p>Мы готовы ответить на ваши вопросы по электронной почте <a hreff="mailto:Info@kc-shoes.ru">info@kc-shoes.ru</a> или по телефону <a href="tel:8(800)7002778">8 (800) 700-27-68</a> (звонок бесплатный)</p>
+    </callout>
+  </container>
+  <!-- / Text -->
+
+  <!-- Order items -->
+  <container class="order-wrap">  
+    
+    <!-- Order item -->
+    <row class="order">
+      <columns small="12" large="3">
+        <div class="order-img">
+          <img src="{{order_img}}" alt="">
+        </div>
+      </columns>
+      <columns small="12" large="5">
+        <div class="order-category">{{order_category}}</div>
+        <div class="order-brand">{{order_brand}}</div>
+        <div class="order-option">
+          <span>Артикул: </span>{{order_index}}</div>
+        </div>
+        <div class="order-option">
+          <span>Размер: {{order_size}}</span>
+        </div>
+        <div class="order-option">
+          <span>Колличество: {{order_count}}</span>
+        </div>
+      </columns>
+      <columns small="12" large="2">
+        <div class="order-price">{{order_price}} ₽</div>
+      </columns>
+    </row>
+    <!-- / Order item -->
+
+    <spacer size="32"></spacer>
+  </container>
+  
+  <!-- Order pay -->
+  <container>
+    <row>
+      <columns small="12" large="8" class="large-offset-3">
+        <div class="order-prices">
+          <p>Общая стоимость <span>{{order_prices_sum}} ₽</span></p>
+          <p>Общая скидка <span>{{order_prices_sale}} ₽</span></p>
+          <p>Стоимость доставки <span>{{order_prices_delivery}} ₽</span></p>
+          <p>Итого к оплате <span>{{order_prices_total}} ₽</span></p>
+        </div>
+      </columns>
+    </row>
+  </container>
+  <!-- / Order pay -->
+
+  <!-- Order detail -->
+  <container>
+    <row>
+      <columns small="12" large="8" class="large-offset-3">
+        <div class="order-details">
+          <h5>Детали заказа</h5>
+          <p>Личные данные <span>{{order_details_client}}</span></p>
+          <p>Телефон <span>{{order_details_phone}}</span></p>
+          <p>Email <span>{{order_details_email}}</span></p>
+          <p>Тип доставки <span>{{order_details_delivery_type}}</span></p>
+          <p>Адрес доставки <span>{{order_details_delivery_adress}}</span></p>
+          <p>Оплата <span>{{order_details_payment}}</span></p>
+          <p>Примерка <span>{{order_details_fitting}}</span></p>
+        </div>
+      </columns>
+    </row>
+  <!-- /Order detail -->  
+  
+    
+  </container>
+
+</wrapper>
+<!--  / Content -->
+
+<!-- Footer -->
+{{> footer}}
+<!-- / Footer -->

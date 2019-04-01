@@ -1,0 +1,27 @@
+.footer {
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    margin-bottom: 30px !important;
+  }
+
+  .container-footer {
+    border-top: 1px solid #e9eff7;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 30px 10px 30px;
+    color: #333;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+  .menu {
+    margin-top: 30px;
+  }
+  .phone {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
