@@ -1,0 +1,53 @@
+---
+subject: Еженедельная рассылка
+
+campaign_name: 21_10_19
+
+h1: Заголовок 1 уровня
+h2: Заголовок 2 уровня
+banner_url: 
+banner_title: Название баннера
+banner_img: assets/img/2x3-big.jpg
+button: Текст для кнопки
+---
+
+{{> header}}
+
+<wrapper class="content">
+  
+  <container>
+    
+    <spacer size="30"></spacer>
+
+    <center>
+      <h1 class="text-center">{{h1}}</h1> 
+      <h2 class="text-center">{{h2}}</h2>
+    </center>
+    
+    <spacer size="30"></spacer>
+
+    <div class="big-banner">
+      <a href="{{banner_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=banner&utm_term=banner">
+        <img src="{{banner_img}}" alt="{{banner_title}}">
+      </a>
+    </div>
+   
+    <spacer size="40"></spacer>
+
+    <!-- Кнопка -->
+    <row class="collapse">
+      <columns>
+        <center>
+          <button href="{{button_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=button&utm_term=button">{{button}}</button>
+        </center>
+      </columns>
+    </row>
+    
+    <spacer size="30"></spacer>
+
+  </container>
+</wrapper>
+
+
+
+{{> footer}}

@@ -1,16 +1,18 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-@import 'header';
-@import 'footer';
+@import "header";
+@import "footer";
 
-@import 'callout';
-@import 'order';
-@import 'promo';
+@import "callout";
+@import "order";
+@import "banner";
+@import "product";
+@import "content";
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
   background: #f6f9fe !important;
   margin: 0 !important;

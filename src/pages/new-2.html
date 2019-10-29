@@ -1,0 +1,499 @@
+---
+subject: Еженедельная рассылка
+
+campaign_name: 21_10_19
+
+h1_1: Заголовок 1 уровня
+h2_1: Заголовок 2 уровня
+
+banner_1_url: 
+banner_1_title: Название баннера
+banner_1_img: assets/img/3x2-small.jpg
+
+button_1: Текст для кнопки
+
+product_1_url: https://kc-shoes.ru/catalog/man/polubotinki/nubukovye_ara_11_16308_12_29056
+product_1_img: https://kc-shoes.ru/image/cache/data/products/1556255611-902728-600x866.JPG
+product_1_title: Мужские полуботинки
+product_1_brand: Ara
+product_1_new_price: 7 803
+
+product_2_url: https://kc-shoes.ru/catalog/woman/kedy/tekstilnye_ara_12_14512_05_28456
+product_2_img: https://kc-shoes.ru/image/cache/data/products/1553685881-433984-600x866.jpg
+product_2_title: Женские кеды
+product_2_brand: Ara
+product_2_new_price: 9 570
+
+product_3_url: https://kc-shoes.ru/catalog/woman/tufli/tekstilnye_jana_8_8_22467_22_348_27959
+product_3_img: https://kc-shoes.ru/image/cache/data/products/1549619982-970700-600x866.JPG
+product_3_title: Женские туфли 
+product_3_brand: Jana
+product_3_new_price: 2 502
+
+product_4_url: https://kc-shoes.ru/catalog/man/polubotinki/kozhanye_jomos_456205_373_0022_27664
+product_4_img: https://kc-shoes.ru/image/cache/data/products/1543553979-584843-600x866.JPG
+product_4_title: Мужские полуботинки 
+product_4_brand: Jomos
+product_4_new_price: 5 593
+
+
+h1_2: Заголовок 1 уровня
+h2_2: Заголовок 2 уровня
+
+banner_2_url: 
+banner_2_title: Название баннера
+banner_2_img: assets/img/2x3-small.jpg
+
+product_5_url: https://kc-shoes.ru/catalog/man/polubotinki/nubukovye_ara_11_16308_12_29056
+product_5_img: https://kc-shoes.ru/image/cache/data/products/1556255611-902728-600x866.JPG
+product_5_title: Мужские полуботинки
+product_5_brand: Ara
+product_5_new_price: 7 803
+
+product_6_url: https://kc-shoes.ru/catalog/woman/kedy/tekstilnye_ara_12_14512_05_28456
+product_6_img: https://kc-shoes.ru/image/cache/data/products/1553685881-433984-600x866.jpg
+product_6_title: Женские кеды
+product_6_brand: Ara
+product_6_new_price: 9 570
+
+product_7_url: https://kc-shoes.ru/catalog/woman/tufli/tekstilnye_jana_8_8_22467_22_348_27959
+product_7_img: https://kc-shoes.ru/image/cache/data/products/1549619982-970700-600x866.JPG
+product_7_title: Женские туфли 
+product_7_brand: Jana
+product_7_new_price: 2 502
+
+product_8_url: https://kc-shoes.ru/catalog/man/polubotinki/kozhanye_jomos_456205_373_0022_27664
+product_8_img: https://kc-shoes.ru/image/cache/data/products/1543553979-584843-600x866.JPG
+product_8_title: Мужские полуботинки 
+product_8_brand: Jomos
+product_8_new_price: 5 593
+
+product_9_url: https://kc-shoes.ru/catalog/man/polubotinki/nubukovye_ara_11_16308_12_29056
+product_9_img: https://kc-shoes.ru/image/cache/data/products/1556255611-902728-600x866.JPG
+product_9_title: Мужские полуботинки
+product_9_brand: Ara
+product_9_new_price: 7 803
+
+product_10_url: https://kc-shoes.ru/catalog/woman/kedy/tekstilnye_ara_12_14512_05_28456
+product_10_img: https://kc-shoes.ru/image/cache/data/products/1553685881-433984-600x866.jpg
+product_10_title: Женские кеды
+product_10_brand: Ara
+product_10_new_price: 9 570
+
+product_11_url: https://kc-shoes.ru/catalog/woman/tufli/tekstilnye_jana_8_8_22467_22_348_27959
+product_11_img: https://kc-shoes.ru/image/cache/data/products/1549619982-970700-600x866.JPG
+product_11_title: Женские туфли 
+product_11_brand: Jana
+product_11_new_price: 2 502
+
+product_12_url: https://kc-shoes.ru/catalog/man/polubotinki/kozhanye_jomos_456205_373_0022_27664
+product_12_img: https://kc-shoes.ru/image/cache/data/products/1543553979-584843-600x866.JPG
+product_12_title: Мужские полуботинки 
+product_12_brand: Jomos
+product_12_new_price: 5 593
+
+button_2: Текст для кнопки
+
+h1_3: Заголовок 1 уровня
+h2_3: Заголовок 2 уровня
+
+
+---
+
+{{> header}}
+
+<wrapper class="content">
+  
+  <container>
+    
+    <spacer size="30"></spacer>
+    
+    <center>
+      <h1 class="text-center">{{h1_1}}</h1>
+      <h2 class="text-center">{{h2_1}}</h2>
+    </center>
+
+    <spacer size="30"></spacer>
+
+    <div class="banner">
+      <a href="{{banner_1_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=banner_1&utm_term=banner_1">
+        <img src="{{banner_1_img}}" alt="{{banner_1_title}}">
+      </a>
+    </div>
+
+    <!-- 4 товара в ряд -->
+    <row class="collapse">
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_1_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product1">
+            <img class="product-img" src="{{product_1_img}}" alt="{{product_1_title}}">
+          </a>
+          <div class="product-title">
+            {{product_1_brand}}
+            <span>{{product_1_title}}</span>
+          </div>
+          <div class="product-price">
+            {{product_1_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_2_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product2">
+            <img class="product-img" src="{{product_2_img}}" alt="{{product_2_title}}">
+          </a>
+          <div class="product-title">
+            {{product_2_brand}}
+            <span>{{product_2_title}}</span>
+          </div>
+          <div class="product-price">
+            {{product_2_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_3_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product3">
+            <img class="product-img" src="{{product_3_img}}" alt="{{product_3_title}}">
+          </a>
+          <div class="product-title">
+            {{product_3_brand}}
+            <span>{{product_3_title}}</span>
+          </div>
+          <div class="product-price">
+            {{product_3_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_4_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product4">
+            <img class="product-img" src="{{product_4_img}}" alt="{{product_4_title}}">
+          </a>
+          <div class="product-title">
+            {{product_4_brand}}
+            <span>{{product_4_title}}</span>
+          </div>
+          <div class="product-price">
+            {{product_4_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+    </row>
+
+    <spacer size="50"></spacer>
+
+    <center>
+      <h1 class="text-center">{{h1_2}}</h1>
+      <h2 class="text-center">{{h2_2}}</h2>
+    </center>
+
+    <spacer size="30"></spacer>
+
+    <!-- банер + 4 товара -->
+    <row class="collapse">
+      <columns small="12" large="6" valign="bottom">
+        <div class="banner">
+          <a href="{{banner_2_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=banner_2&utm_term=banner_2">
+            <img src="{{banner_2_img}}" alt="{{banner_2_title}}">
+          </a>
+        </div>
+      </columns>
+      <columns small="12" large="6">
+        <row>
+          <columns small="12" large="6">
+            <div class="product">
+              <a href="{{product_5_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product5">
+                <img class="product-img" src="{{product_5_img}}" alt="{{product_5_title}}">
+              </a>
+              <div class="product-title">
+                <span>{{product_5_title}}</span>
+                {{product_5_brand}}
+              </div>
+              <div class="product-price">
+                {{product_5_new_price}} ₽
+              </div>
+            </div>
+          </columns>
+          
+          <columns small="12" large="6">
+            <div class="product">
+              <a href="{{product_6_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product6">
+                <img class="product-img" src="{{product_6_img}}" alt="{{product_6_title}}">
+              </a>
+              <div class="product-title">
+                <span>{{product_6_title}}</span>
+                {{product_6_brand}}
+              </div>
+              <div class="product-price">
+                {{product_6_new_price}} ₽
+              </div>
+            </div>
+          </columns>
+        </row>
+        <row>
+          <columns small="12" large="6">
+            <div class="product">
+              <a href="{{product_7_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product73">
+                <img class="product-img" src="{{product_7_img}}" alt="{{product_7_title}}">
+              </a>
+              <div class="product-title">
+                <span>{{product_7_title}}</span>
+                {{product_7_brand}}
+              </div>
+              <div class="product-price">
+                {{product_7_new_price}} ₽
+              </div>
+            </div>
+          </columns>
+          <columns small="12" large="6">
+            <div class="product">
+              <a href="{{product_8_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product8">
+                <img class="product-img" src="{{product_8_img}}" alt="{{product_8_title}}">
+              </a>
+              <div class="product-title">
+                <span>{{product_8_title}}</span>
+                {{product_8_brand}}
+              </div>
+              <div class="product-price">
+                {{product_8_new_price}} ₽
+              </div>
+            </div>
+          </columns>
+        </row>
+      </columns>
+    </row>
+
+    <!-- 4 товара в ряд -->
+    <row class="collapse" >
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_9_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product9">
+            <img class="product-img" src="{{product_9_img}}" alt="{{product_9_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_9_title}}</span>
+            {{product_9_brand}}
+          </div>
+          <div class="product-price">
+            {{product_9_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_10_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product10">
+            <img class="product-img" src="{{product_10_img}}" alt="{{product_10_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_10_title}}</span>
+            {{product_10_brand}}
+          </div>
+          <div class="product-price">
+            {{product_10_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_11_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product11">
+            <img class="product-img" src="{{product_11_img}}" alt="{{product_11_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_11_title}}</span>
+            {{product_11_brand}}
+          </div>
+          <div class="product-price">
+            {{product_11_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_12_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product12">
+            <img class="product-img" src="{{product_12_img}}" alt="{{product_12_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_12_title}}</span>
+            {{product_12_brand}}
+          </div>
+          <div class="product-price">
+            {{product_12_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+    </row>
+
+    <spacer size="40"></spacer>
+
+    <!-- кнопка -->
+    <row>
+      <columns>
+        <center>
+          <button href="{{button_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=button&utm_term=button">{{button_2}}</button>
+        </center>
+      </columns>
+    </row>
+
+    <spacer size="30"></spacer>
+
+    <center>
+      <h1 class="text-center">{{h1_3}}</h1>
+      <h2 class="text-center">{{h2_3}}</h2>
+    </center>
+
+    <spacer size="30"></spacer>
+
+    <!-- банер + 4 товара -->
+    <row class="collapse">
+        <columns small="12" large="6">
+          <row>
+            <columns small="12" large="6">
+              <div class="product">
+                <a href="{{product_1_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product1">
+                  <img class="product-img" src="{{product_1_img}}" alt="{{product_1_title}}">
+                </a>
+                <div class="product-title">
+                  <span>{{product_1_title}}</span>
+                  {{product_1_brand}}
+                </div>
+                <div class="product-price">
+                  {{product_1_new_price}} ₽
+                </div>
+              </div>
+            </columns>
+            
+            <columns small="12" large="6">
+              <div class="product">
+                <a href="{{product_2_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product2">
+                  <img class="product-img" src="{{product_2_img}}" alt="{{product_2_title}}">
+                </a>
+                <div class="product-title">
+                  <span>{{product_2_title}}</span>
+                  {{product_2_brand}}
+                </div>
+                <div class="product-price">
+                  {{product_2_new_price}} ₽
+                </div>
+              </div>
+            </columns>
+          </row>
+          <row>
+            <columns small="12" large="6">
+              <div class="product">
+                <a href="{{product_3_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product3">
+                  <img class="product-img" src="{{product_3_img}}" alt="{{product_3_title}}">
+                </a>
+                <div class="product-title">
+                  <span>{{product_3_title}}</span>
+                  {{product_3_brand}}
+                </div>
+                <div class="product-price">
+                  {{product_3_new_price}} ₽
+                </div>
+              </div>
+            </columns>
+            <columns small="12" large="6">
+              <div class="product">
+                <a href="{{product_4_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product4">
+                  <img class="product-img" src="{{product_4_img}}" alt="{{product_4_title}}">
+                </a>
+                <div class="product-title">
+                  <span>{{product_4_title}}</span>
+                  {{product_4_brand}}
+                </div>
+                <div class="product-price">
+                  {{product_4_new_price}} ₽
+                </div>
+              </div>
+            </columns>
+          </row>
+        </columns>
+
+      <columns small="12" large="6" valign="middle">
+        <div class="banner">
+          <a href="{{banner_2_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=banner_2&utm_term=banner_2">
+            <img src="{{banner_2_img}}" alt="{{banner_2_title}}">
+          </a>
+        </div>
+      </columns>
+      
+    </row>
+
+    <!-- 4 товара в ряд -->
+    <row class="collapse">
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_1_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product1">
+            <img class="product-img" src="{{product_1_img}}" alt="{{product_1_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_1_title}}</span>
+            {{product_1_brand}}
+          </div>
+          <div class="product-price">
+            {{product_1_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_2_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product2">
+            <img class="product-img" src="{{product_2_img}}" alt="{{product_2_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_2_title}}</span>
+            {{product_2_brand}}
+          </div>
+          <div class="product-price">
+            {{product_2_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_3_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product3">
+            <img class="product-img" src="{{product_3_img}}" alt="{{product_3_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_3_title}}</span>
+            {{product_3_brand}}
+          </div>
+          <div class="product-price">
+            {{product_3_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+      <columns small="12" large="3">
+        <div class="product">
+          <a href="{{product_4_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product4">
+            <img class="product-img" src="{{product_4_img}}" alt="{{product_4_title}}">
+          </a>
+          <div class="product-title">
+            <span>{{product_4_title}}</span>
+            {{product_4_brand}}
+          </div>
+          <div class="product-price">
+            {{product_4_new_price}} ₽
+          </div>
+        </div>
+      </columns>
+    </row>
+
+    <spacer size="40"></spacer>
+
+    <!-- кнопка -->
+    <row class="collapse">
+      <columns>
+        <center>
+          <button href="{{button_url}}&utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=button&utm_term=button">{{button_1}}</button>
+        </center>
+      </columns>
+    </row>
+
+    <spacer size="30"></spacer>
+
+  </container>
+</wrapper>
+
+{{> footer}}
