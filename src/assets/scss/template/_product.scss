@@ -1,4 +1,6 @@
 .product {
+  position: relative;
+
   a {
     @media only screen and (max-width: #{$global-breakpoint}) {
       display: block;
@@ -6,6 +8,48 @@
     }
   }
 
+  &-badge {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 0;
+    position: absolute;
+    padding: 0 5px;
+    height: 30px;
+    font-weight: 500;
+    top: 10px;
+    text-align: center;
+    right: 20px;
+    letter-spacing: -1px;
+    width: 30px;
+
+    .product--new & {
+      background-color: #00b3ff;
+    }
+
+    .product--sale & {
+      background-color: #f74646;
+    }
+
+    span {
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 40px solid transparent;
+      left: -5px;
+      position: relative;
+
+      .product--new & {
+        border-top-color: #00b3ff;
+      }
+
+      .product--sale & {
+        border-top-color: #f74646;
+      }
+    }
+  }
   &-title {
     text-align: left;
     padding: 5px 0 0 0;
@@ -29,13 +73,11 @@
     line-height: 25px;
     font: 600 14px/20px Arial, Helvetica, sans-serif;
     padding-left: 20px;
+    color: #000000;
 
     &-old {
       text-decoration: line-through;
-      opacity: 0.7;
-      font-size: 11px;
-      color: #000000;
-      font-weight: 400;
+      opacity: 0.5;
       padding-right: 5px;
     }
     &-sale {

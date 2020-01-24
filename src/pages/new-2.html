@@ -124,7 +124,11 @@ h2_3: Заголовок 2 уровня
     <!-- 4 товара в ряд -->
     <row class="collapse">
       <columns small="12" large="3">
-        <div class="product">
+        <div class="product product--sale">
+          <div class="product-badge">
+            -10%
+            <span></span>
+          </div>
           <a href="{{product_1_url}}?utm_source=email&utm_medium=mailsoft&utm_campaign={{campaign_name}}&utm_content=top&utm_term=product1">
             <img class="product-img" src="{{product_1_img}}" alt="{{product_1_title}}">
           </a>
@@ -133,7 +137,8 @@ h2_3: Заголовок 2 уровня
             <span>{{product_1_title}}</span>
           </div>
           <div class="product-price">
-            {{product_1_new_price}} ₽
+            <span class="product-price-old">{{product_1_new_price}} ₽</span>
+            <span class="product-price-sale">{{product_1_new_price}} ₽</span>
           </div>
         </div>
       </columns>
