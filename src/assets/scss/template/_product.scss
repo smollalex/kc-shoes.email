@@ -2,6 +2,14 @@
   position: relative;
 
   a {
+    height: 188px;
+    display: inline-block;
+    width: 100%;
+    min-width: 130px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
     @media only screen and (max-width: #{$global-breakpoint}) {
       display: block;
       text-align: center !important;
@@ -9,45 +17,23 @@
   }
 
   &-badge {
-    display: inline-block;
+    display: block;
     color: #fff;
     font-size: 14px;
     line-height: 30px;
-    border-radius: 0;
-    position: absolute;
     padding: 0 5px;
-    height: 30px;
     font-weight: 500;
-    top: 10px;
     text-align: center;
-    right: 20px;
     letter-spacing: -1px;
-    width: 30px;
-
-    .product--new & {
-      background-color: #00b3ff;
-    }
+    width: 40px;
+    height: 45px;
+    float: right;
 
     .product--sale & {
-      background-color: #f74646;
-    }
-
-    span {
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-right: 40px solid transparent;
-      left: -5px;
-      position: relative;
-
-      .product--new & {
-        border-top-color: #00b3ff;
-      }
-
-      .product--sale & {
-        border-top-color: #f74646;
-      }
+      background-image: url(../assets/img/badge.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 10px;
     }
   }
   &-title {
